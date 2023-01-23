@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //cors
 const cors = require("cors");
-app.use(cors());
+app.use(cors({ origin: 'https://vast-gray-turtleneck-shirt.cyclic.app/' }));
 
 app.use(express.json());
 
